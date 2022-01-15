@@ -9,7 +9,7 @@ class DB {
     protected $pdo;
 
     public function __construct() {
-        $this->pdo = new PDO('mysql:host=localhost;dbname=fara-blog', 'study', '123456789');
+        $this->pdo = new PDO('mysql:host=localhost;dbname=?????', 'username', 'password');
     }
 
     public function query($sql, $params = []) {
