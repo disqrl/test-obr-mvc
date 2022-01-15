@@ -4,8 +4,9 @@ CREATE TABLE `contacts` (
     `last_name` VARCHAR(150) NOT NULL,
     `phone` VARCHAR(20) NOT NULL,
     `comments` VARCHAR(200),
+    `created_at` DATETIME DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY(`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=uf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO contacts(first_name, last_name, phone, comments) VALUES
 ('Komron', 'Mukhamadulloev', '992931668172', 'no data'),
